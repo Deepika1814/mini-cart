@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anon - eCommerce Website</title>
+  <title>Mini Cart - eCommerce Website</title>
 
   <!--
     - favicon
@@ -59,7 +59,7 @@
             <h3 class="newsletter-title">Subscribe Newsletter.</h3>
 
             <p class="newsletter-desc">
-              Subscribe the <b>Anon</b> to get latest products and discount update.
+              Subscribe to <b>Mini Cart</b> to get latest products and discount update.
             </p>
 
           </div>
@@ -188,8 +188,9 @@
 
       <div class="container">
 
-        <a href="#" class="header-logo">
-          <img src="./assets/images/logo/logo.svg" alt="Anon's logo" width="120" height="36">
+        <a href="#" class="header-logo" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+          <img src="./assets/images/logo/logo.png" alt="Mini Cart's logo" width="50" height="50" style="object-fit: contain;">
+          <span style="font-size: 24px; font-weight: 700; color: var(--eerie-black);">Mini Cart</span>
         </a>
 
         <div class="header-search-container">
@@ -380,7 +381,7 @@
           </li>
 
           <li class="menu-category">
-            <a href="#" class="menu-title">Men's</a>
+            <a href="#new-products" class="menu-title">Men's</a>
 
             <ul class="dropdown-list">
 
@@ -404,7 +405,7 @@
           </li>
 
           <li class="menu-category">
-            <a href="#" class="menu-title">Women's</a>
+            <a href="#new-products" class="menu-title">Women's</a>
 
             <ul class="dropdown-list">
 
@@ -428,7 +429,7 @@
           </li>
 
           <li class="menu-category">
-            <a href="#" class="menu-title">Jewelry</a>
+            <a href="#new-products" class="menu-title">Jewelry</a>
 
             <ul class="dropdown-list">
 
@@ -452,7 +453,7 @@
           </li>
 
           <li class="menu-category">
-            <a href="#" class="menu-title">Perfume</a>
+            <a href="#new-products" class="menu-title">Perfume</a>
 
             <ul class="dropdown-list">
 
@@ -476,11 +477,11 @@
           </li>
 
           <li class="menu-category">
-            <a href="#" class="menu-title">Blog</a>
+            <a href="#blog" class="menu-title">Blog</a>
           </li>
 
           <li class="menu-category">
-            <a href="#" class="menu-title">Hot Offers</a>
+            <a href="#deal-of-the-day" class="menu-title">Hot Offers</a>
           </li>
 
         </ul>
@@ -666,11 +667,11 @@
         </li>
 
         <li class="menu-category">
-          <a href="#" class="menu-title">Blog</a>
+          <a href="#blog" class="menu-title">Blog</a>
         </li>
 
         <li class="menu-category">
-          <a href="#" class="menu-title">Hot Offers</a>
+          <a href="#deal-of-the-day" class="menu-title">Hot Offers</a>
         </li>
 
       </ul>
@@ -2177,7 +2178,7 @@
             - PRODUCT FEATURED
           -->
 
-          <div class="product-featured">
+          <div class="product-featured" id="deal-of-the-day">
 
             <h2 class="title">Deal of the day</h2>
 
@@ -2361,7 +2362,7 @@
             - PRODUCT GRID
           -->
 
-          <div class="product-main">
+          <div class="product-main" id="new-products">
 
             <h2 class="title">New Products</h2>
 
@@ -3175,7 +3176,7 @@
       - BLOG
     -->
 
-    <div class="blog">
+    <div class="blog" id="blog">
 
       <div class="container">
 
@@ -3566,7 +3567,7 @@
         <img src="./assets/images/payment.png" alt="payment method" class="payment-img">
 
         <p class="copyright">
-          Copyright &copy; <a href="#">Anon</a> all rights reserved.
+          Copyright &copy; <a href="#">Mini Cart</a> all rights reserved.
         </p>
 
       </div>
@@ -3579,6 +3580,15 @@
 
 
 
+
+  <!-- 
+    - Firebase SDKs (Compat version allows seamless global access in direct HTML imports)
+  -->
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+  <script src="./assets/js/firebase-config.js"></script>
+  <script src="./assets/js/db-products.js"></script>
 
   <!--
     - custom js link
