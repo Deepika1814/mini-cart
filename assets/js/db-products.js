@@ -5,7 +5,7 @@
 
 const BACKEND_API_URL = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1" || window.location.hostname === ""
   ? "http://localhost:5000" 
-  : "YOUR_RENDER_BACKEND_URL";
+  : "https://mini-cart-lks6.onrender.com";
 
 // Global Store State
 let allProducts = [];
